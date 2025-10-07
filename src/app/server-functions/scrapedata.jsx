@@ -39,7 +39,13 @@ async function fetchevents(previousData) {
         const hash = require('crypto').createHash('md5').update(events.join()).digest('hex');
         const lastfetch = new Date().toISOString();
 
-        if (previousData && previousData.meta && ( new Date() -new Date(previousData.lastfetch > 1000 *60*60*2) || previousData.meta.hash === hash)) return previousData;
+        const timeSinceLastFetch = new Date()-new Date(previousData.lastfetch)
+        console.log('Time since last fetch (ms):', timeSinceLastFetch);
+        console.log('Current hash:', hash);
+        console.log('Previous hash:', previousData.meta ? previousData.meta.hash : 'N/A');
+        console.log('Previous lastfetch:', previousData.meta ? previousData.meta.lastfetch : 'N/A');
+        console.log("current lastfetch",lastfetch);
+        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*6 || previousData.meta.hash === hash)) return previousData;
         
         const parsedEvents = await Promise.all(events.map(async (event, i) => {
             const parts = event.split('strong>');
@@ -93,14 +99,13 @@ async function fetchevents(previousData) {
 
 export default async function scrapeData() {
     const filePath = path.join(process.cwd(), 'public', 'events.json');
-    const data = await readFile(filePath, 'utf-8');
+    const data = await readFile(filePath, 'utf-8').then(content => JSON.parse(content));
     try {
         return await fetchevents(data);
     } catch (error) {
         console.error('Error in scrapeData:', error);
-        // Return existing data if fetch fails
         try {
-            return JSON.parse(data);
+            return data;
         } catch (readError) {
             console.error('Error reading existing data:', readError);
             return { meta: {}, events: [] };
