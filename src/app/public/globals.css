@@ -6,3 +6,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.cally ::part(day):hover:not(:is(selected, today)) {
+    background: var(--color-secondary) !important;
+    color: var(--color-secondary-content) !important;
+  }
+ .cally ::part(selected) {
+    color: var(--color-base-content) !important;
+    background: var(--color-base-300) !important;
+  }
