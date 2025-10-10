@@ -5,9 +5,11 @@ import CheckboxTree from "./checkbox-tree"
 import Link from "next/link";
 
 export default function FilterBox({basedata}) {
+    const minDate=basedata.events[0].date;
+    const maxDate=basedata.events[basedata.events.length-1].date;
 
     const [activeLocations,setActiveLocations] = useState([]);
-    const [dateRange,setDateRange] = useState([new Date(),new Date()])
+    const [dateRange,setDateRange] = useState((minDate.split("T")[0]+"/"+maxDate.split("T")[0]).split("/").map(date=> new Date(date.split("."))))
     const [searchTerm,setSearchTerm] = useState("")
 
     const resetFields = () => {
@@ -20,7 +22,7 @@ export default function FilterBox({basedata}) {
         <div className="dropdown">
             <div tabIndex={0} role="button" className="btn mr-4 p-4! border-1 border border-base-300 rounded-field">Date</div>
             <div className="dropdown-content p-2 pl-0 rounded-field">
-                <Calendar minDate={basedata.meta.minDate} maxDate={basedata.meta.maxDate} onChange={setDateRange} />
+                <Calendar minDate={minDate} maxDate={maxDate} onChange={setDateRange} />
             </div>
         </div>
         <div className="dropdown">

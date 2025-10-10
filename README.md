@@ -12,6 +12,7 @@ Because i didn't want to look throught the events one by one.
 
 ## Roadmap
 
+- [x] Better search algorithm
 - [ ] Add more sources for the events
 - [ ] Add a map to display where the event is happening
 - [ ] Add a calendar to display all the events happening

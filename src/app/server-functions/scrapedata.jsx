@@ -45,7 +45,7 @@ async function fetchevents(previousData) {
         console.log('Previous hash:', previousData.meta ? previousData.meta.hash : 'N/A');
         console.log('Previous lastfetch:', previousData.meta ? previousData.meta.lastfetch : 'N/A');
         console.log("current lastfetch",lastfetch);
-        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*6 || previousData.meta.hash === hash)) return previousData;
+        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*6 || previousData.meta.hash === hash)) {console.log("Retruning old data");return previousData};
         
         const parsedEvents = await Promise.all(events.map(async (event, i) => {
             const parts = event.split('strong>');
@@ -99,16 +99,24 @@ async function fetchevents(previousData) {
 
 export default async function scrapeData() {
     const filePath = path.join(process.cwd(), 'public', 'events.json');
-    const data = await readFile(filePath, 'utf-8').then(content => JSON.parse(content));
     try {
-        return await fetchevents(data);
-    } catch (error) {
-        console.error('Error in scrapeData:', error);
+        const data = await readFile(filePath, 'utf-8').then(content => JSON.parse(content)); 
         try {
-            return data;
-        } catch (readError) {
-            console.error('Error reading existing data:', readError);
-            return { meta: {}, events: [] };
+            return await fetchevents(data);
+        } catch (error) {
+            console.error('Error in scrapeData:', error);
+            try {
+                return data;
+            } catch (readError) {
+                console.error('Error reading existing data:', readError);
+                return { meta: {}, events: [] };
+            }
         }
     }
+    catch (error) {
+        console.error('Error reading existing data:', error);
+        const data = await fetchevents({ meta: {hash:""}, events: [] })
+        return data
+    }
+    
 }
