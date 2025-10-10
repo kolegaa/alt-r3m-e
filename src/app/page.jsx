@@ -10,12 +10,10 @@ export default async function Home({searchParams}) {
     return res;
   });
   const params = await searchParams;
-  console.log(params)
   filterData.startDate = params["startDate"] || filterData.startDate
   filterData.endDate = params["endDate"] || filterData.endDate
   filterData.activeLocations = params["activeLocations"] || filterData.activeLocations
   filterData.searchTerm = params["searchTerm"] || filterData.searchTerm
-  console.log(filterData);
 
   return (
     <main>

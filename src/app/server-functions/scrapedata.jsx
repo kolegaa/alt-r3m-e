@@ -39,14 +39,9 @@ async function fetchevents(previousData) {
         const hash = require('crypto').createHash('md5').update(events.join()).digest('hex');
         const lastfetch = new Date().toISOString();
 
-        const timeSinceLastFetch = new Date()-new Date(previousData.lastfetch)
-        console.log('Time since last fetch (ms):', timeSinceLastFetch);
-        console.log('Current hash:', hash);
-        console.log('Previous hash:', previousData.meta ? previousData.meta.hash : 'N/A');
-        console.log('Previous lastfetch:', previousData.meta ? previousData.meta.lastfetch : 'N/A');
-        console.log("current lastfetch",lastfetch);
-        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*6 || previousData.meta.hash === hash)) {console.log("Retruning old data");return previousData};
-        
+        const timeSinceLastFetch = new Date()-new Date(previousData.meta.lastfetch)
+        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*24 || previousData.meta.hash === hash)) {console.log("Retruning old data");return previousData};
+        console.log("Fetching new data")
         const parsedEvents = await Promise.all(events.map(async (event, i) => {
             const parts = event.split('strong>');
             if (parts.length < 3) {
