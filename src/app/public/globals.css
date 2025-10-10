@@ -15,3 +15,7 @@ body {
     color: var(--color-base-content) !important;
     background: var(--color-base-300) !important;
   }
+   .cally ::part(button day today) {
+    background: var(--color-primary) !important;
+    color: var(--color-primary-content) !important;
+  }

@@ -1,14 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sometype_Mono } from "next/font/google";
 import "./public/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const font = Sometype_Mono({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["variable"], // Regular and bold weights
+  display: "swap",
 });
 
 export const metadata = {
@@ -20,9 +16,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={font.className}
       >
         {children}
+        <div className="flex flex-row text-base-content border-t-1 border-base-content border-solid m-4 mb-0 p-2">
+          <div>{"Made with <3 by Duck"}</div>
+          <div className="ml-auto">
+             <label htmlFor="my_modal_7" className="btn btn-ghost underline h-auto! rounded-field">credits</label>
+            <input type="checkbox" id="my_modal_7" className="modal-toggle" />
+            <div className="modal" role="dialog">
+              <div className="modal-box">
+                Data scraped from <a href="https://www.rock3miasto.pl" className="underline">rock3miasto</a>
+                <div className="underline">
+                  <a href="https://github.com/googlefonts/sometype-mono">Sometype mono font</a> <br/>
+                  <a href="https://wicky.nillia.ms/cally/">Callendar component</a> <br />
+                  <a href="https://daisyui.com/">Components</a> <br />
+                  <a href="https://tailwindcss.com/">Style library</a> <br />
+                  <a href="https://react.dev/">React framework</a> <br />
+                  <a href="https://nextjs.org/">Next.js framework</a> <br />
+                  <a href="https://bun.sh/">Bun runtime</a> <br />
+                </div>
+                <label className="modal-backdrop text-base-content " htmlFor="my_modal_7">Close</label>
+              </div>
+              
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
