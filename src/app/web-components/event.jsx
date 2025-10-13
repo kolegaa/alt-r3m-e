@@ -111,7 +111,7 @@ export default function Event({ event, filterData }) {
     if (showEvent && filterData.searchTerm && filterData.searchTerm !== "") {
         const searchLower = filterData.searchTerm.toLowerCase();
         const searchable = (event.description + " " + event.title).toLowerCase();
-        const result = fuzzySearch(searchable, searchLower, 3);
+        const result = fuzzySearch(searchable, searchLower, 1);
         if (result.length === 0) {
             showEvent = false;
         }

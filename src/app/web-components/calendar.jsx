@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function Calendar({onChange,minDate,maxDate}) {
   const [value, setValue] = useState(minDate.split("T")[0]+"/"+maxDate.split("T")[0]);
-
   const handleDateChange = (value) => {
     setValue(value);
     

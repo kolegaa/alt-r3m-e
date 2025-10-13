@@ -5,11 +5,13 @@ import FilterBox from "./web-components/filterbox";
 export default async function Home({searchParams}) {
   let filterData = {};
   
-  const data = await scrapeData().then((res) => {
+  const params = await searchParams;
+  let forceRefetch = false
+  if (params["forceRefetch"]) {forceRefetch = true};
+  const data = await scrapeData(forceRefetch).then((res) => {
     filterData={startDate: res.events[0].date,endDate: res.events[res.events.length-1].date,activeLocations: [].concat(...Object.values(res.meta.locations)), searchTerm:""}
     return res;
   });
-  const params = await searchParams;
   filterData.startDate = params["startDate"] || filterData.startDate
   filterData.endDate = params["endDate"] || filterData.endDate
   filterData.activeLocations = params["activeLocations"] || filterData.activeLocations
