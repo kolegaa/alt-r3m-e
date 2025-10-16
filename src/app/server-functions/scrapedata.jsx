@@ -43,7 +43,7 @@ async function fetchevents(previousData,forceRefetch) {
         const lastfetch = new Date().toISOString();
         const timeSinceLastFetch = new Date()-new Date(previousData.meta.lastfetch)
         if (previousData && previousData.meta && !forceRefetch) {
-            if (timeSinceLastFetch/1000/60/60 < 24){console.log("Data is " + timeSinceLastFetch/1000/60/60 + " hours old, Retruning old data"); return previousData};
+            if (timeSinceLastFetch/1000/60/60 < 6){console.log("Data is " + timeSinceLastFetch/1000/60/60 + " hours old, Retruning old data"); return previousData};
             if (previousData.meta.hash === hash) {console.log("Data is the same, Retruning old data"); return previousData};
         };
         console.log("Data is " + timeSinceLastFetch/1000/60/60 + " hours old, Fetching new data")

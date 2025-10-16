@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "accurate-search": "^1.2.15",
     "cally": "^0.8.0",
     "cheerio": "^1.1.2",
     "cli-progress": "^3.12.0",

@@ -1,8 +1,14 @@
 {
   "meta": {
     "locations": {
+      "Gdynia": [
+        "Sala Koncertowa Portu Gdynia",
+        "Ucho/Podwórko Art",
+        "Desdemona",
+        "Blues Club",
+        "Gdynia Arena"
+      ],
       "Gdańsk": [
-        "Stary Maneż",
         "GAK Scena Muzyczna",
         "Stacja Food Hall",
         "MONK",
@@ -14,6 +20,7 @@
         "Tartaczna 2",
         "Wydział Remontowy",
         "Europejskie Centrum Solidarności",
+        "Stary Maneż",
         "Drizzly Grizzly",
         "B90",
         "Filharmonia Bałtycka",
@@ -25,13 +32,6 @@
         "Serum",
         "Polsat Plus Arena Gdańsk"
       ],
-      "Gdynia": [
-        "Sala Koncertowa Portu Gdynia",
-        "Ucho/Podwórko Art",
-        "Desdemona",
-        "Blues Club",
-        "Gdynia Arena"
-      ],
       "Sopot": [
         "SPATiF",
         "Dwie Zmiany",
@@ -39,21 +39,10 @@
         "Opera Leśna"
       ]
     },
-    "lastfetch": "2025-10-13T07:21:53.396Z",
-    "hash": "9175480275f6bd152a4976d4c3e7a46c"
+    "lastfetch": "2025-10-16T06:31:07.697Z",
+    "hash": "a5a590f236f640c4421157c16ad8530a"
   },
   "events": [
-    {
-      "title": "Kasia Kowalska: 30 lat Gemini na Finał",
-      "link": "https://www.rock3miasto.pl/wydarzenie/kasia-kowalska-30-lat-gemini-na-final/",
-      "date": "2025-10-14T22:00:00.000Z",
-      "location": [
-        "Gdańsk",
-        "Stary Maneż"
-      ],
-      "description": "data: 15 października 2025, godz. 20:00miejsce: Stary Maneż (o miejscu)adres: ul. Słowackiego 23, Gdańsk\n\nPo roku pełnym emocji, wzruszeń i rockowej energii Kasia Kowalska zamyka jubileuszową odyseję finałowymi koncertami „30 lat Gemini na Finał”. To niepowtarzalna szansa, by ponownie – i po raz ostatni w tej odsłonie – zanurzyć się w brzmieniach kultowego debiutu, usłyszeć największe przeboje artystki oraz kilka muzycznych niespodzianek przygotowanych specjalnie na ten wieczór.\nW 2024 roku minęło 30 lat od spektakularnego debiutu fonograficznego Kasi Kowalskiej na polskim rynku muzycznym. Z tej okazji artystka wraz z zespołem wyruszyła w trasę koncertową „30 lat Gemini”. Była to podróż przez kilkadziesiąt miast w całej Polsce, która pozwoliła fanom Kasi Kowalskiej ponownie zanurzyć się w dźwiękach tego legendarnego albumu.\nFinałowe koncerty będą ostatnią szansą, by przeżyć to wszystko na żywo razem z artystami. Wspaniała oprawa świetlna, panoramiczne wizualizacje z archiwalnymi kadrami z lat 90. i współczesnymi ujęciami trasy oraz specjalnie przygotowana scenografia stworzą spektakl łączący trzy dekady twórczości Kasi Kowalskiej w jedno intensywne doświadczenie.\nNie przegap ostatniej okazji, by wspólnie z Kasią zamknąć ten rozdział historii polskiej muzyki i napisać finał, który zostanie w pamięci na kolejnych 30 lat\nbilety: bilety.34art.pl",
-      "id": 0
-    },
     {
       "title": "NutkoSfera: CeZik dzieciom",
       "link": "https://www.rock3miasto.pl/wydarzenie/nutkosfera-cezik-dzieciom-5/",
@@ -63,7 +52,7 @@
         "Sala Koncertowa Portu Gdynia"
       ],
       "description": "data: 16 października 2025, godz. 17:00miejsce: Sala Koncertowa Portu Gdynia (o miejscu)adres: ul. Rotterdamska 9, Gdynia\n\nJoł, joł Jowisz! – tymi słowami wita się z Wami jedna z planet naszego Układu Słonecznego… Aby poznać lepiej duże i „Małe ciała niebieskie” oraz dowiedzieć się, czemu samolot lata, statek pływa, Słońce świeci a głowa myśli, spotkaj się z nami podczas wyjątkowego koncertu. Zabierz ze sobą uśmiech i dołącz do wspólnej zabawy!\nNutkosfera to projekt pod kierownictwem CeZika. Za tym pseudonimem kryje się Cezary Nowak. Artysta od dziecka brzdąka, stuka, buczy, huczy i wyje! Od 2009 roku swoją twórczość publikuje w Internecie.\nbilety: bkb.pl",
-      "id": 1
+      "id": 0
     },
     {
       "title": "Glątwa",
@@ -74,7 +63,7 @@
         "GAK Scena Muzyczna"
       ],
       "description": "data: 16 października 2025, godz. 19:00miejsce: GAK Scena Muzyczna (o miejscu)adres: ul. Nowiny 2b, Gdańsk\n\nGlątwa, założona przez Macieja Łbika i Pawła Przyborowskiego, tworzy muzykę elektroniczną wzbogaconą o żywe instrumenty, zwłaszcza gitarę. Debiutancki album „Babie lato” (2021) spotkał się z bardzo dobrym odbiorem, a jego single trafiły do wielu rozgłośni radiowych. Najnowsza płyta „Settembrini” (2024) to hołd dla twórczości Tomasza Manna, inspirowany powieścią „Czarodziejska Góra”. To mroczna, transowa elektronika z cięższymi bitami, ekspresyjną gitarą i bogactwem instrumentów akustycznych. Narracja prowadzi słuchaczy w podróż do fikcyjnego sanatorium „Berghof”, gdzie spotykają barwne postacie i błyskotliwe obserwacje tytułowego Settembriniego. Koncert będzie słuchowiskiem muzycznym, w którym zapraszamy słuchaczy do odbycia wspólnej podróży z Gdańska do Szwajcarii.\nBilety: 30 zł w przedsprzedaży na Bilety24.pl, 40 zł w dniu koncertu w kasie",
-      "id": 2
+      "id": 1
     },
     {
       "title": "Sad Smiles, Red Lust",
@@ -85,7 +74,7 @@
         "Stacja Food Hall"
       ],
       "description": "data: 16 października 2025, godz. 19:00miejsce: Stacja Food Hall (o miejscu)adres: ul. Kilińskiego 4, Gdańsk\n\nRed Lust to młody zespół rockowy z Gdańska, który ma już na swoim koncie debiutanckie EP. W swoim brzmieniu łączy elementy klasycznego rocka, bluesa i funku, nie stroniąc przy tym od popowych inspiracji. W 2020 roku formacja wygrała konkurs „Imagine Poland 2020”, a rok później zajęła drugie miejsce na międzynarodowym festiwalu „Imagine Music International 2021” w Brukseli. Red Lust wielokrotnie zdobywał miejsca na podium w różnych krajowych przeglądach muzycznych. W lipcu 2024 roku zespół wydał debiutanckie EP zatytułowane „Red Lust”, zawierające pięć flagowych utworów. W tym roku grupa wystąpiła także na małej scenie Ostrów Rock Festival.\nSad Smiles – to jest ich czas! W ostatnich miesiącach zagrali na scenach głównych OFF Festivalu i Jarocin Festiwalu (wygrali przegląd kapel!), wystąpili też na Męskim Graniu, Inside Seaside, Great September oraz na Watermill Festivalu w Niemczech czy Taks w Serbii! Mają średnio po 18 lat i ponad 150 koncertów na koncie! Latem ukazał się ich debiutancki album „Bunt”, który zbiera świetne recenzje! Sad Smiles to zespół złożony z czterech nastolatków, którzy kochają muzykę. Średnia wieku w kapeli to… 18 lat, a już piszą dojrzałe teksty, komponują muzykę i tworzą własne piosenki. Sad Smiles wystąpili też na CieszFanów Festivalu, na showcasach Music Week Poland i Tak Brzmi Miasto. Ich ostatnie single były emitowane w kilkudziesięciu stacjach radiowych z Czwórką, Radiem 357 (Płyta Tygodnia!), Trójką, Eską Rock, Antyradiem i Radiem Nowy Świat na czele. Latem 2025 roku nakładem wytwórni 33 Records ukazał się ich debiutancki album „Bunt”!\nbilety: www.kupbilecik.pl",
-      "id": 3
+      "id": 2
     },
     {
       "title": "Oczi Cziorne x Morświn",
@@ -96,7 +85,7 @@
         "MONK"
       ],
       "description": "data: 16 października 2025, godz. 20:00miejsce: MONK (o miejscu)adres: ul. Garncarska 18/20, Gdańsk\n\nOczi Cziorne – historia długa, trochę mroczna, trochę zabawna.\nJak to w kobiecym zespole bywa – pełna zwrotów akcji, namiętności i całej palety emocji. Najpierw były same dziewczyny, a potem zaczęły się Oczowe przygody z mężczyznami – perkusje, basy, klarnety, saksofony, trąbki… W sumie przez skład przewinęło się 14 kobiet i 28 mężczyzn. A jednak trzon od zawsze pozostaje ten sam: Jowita – klawisze, Ania – flet i Maja – wokal. Od lat dzielnie trwają z nimi perkusista Michał Gos i basista Maciek Jeleniewski, a niedawno do zespołu dołączyła druga wokalistka – Sylwia Jasnoch.\nHistoria zespołu przede wszystkim koncerty, o których długo się mówiło – jedne uchodziły za skandaliczne, inne za magiczne. W 1990 roku na Festiwalu Muzyki Kobiecej Miss Rock Europe w Kijowie zdobyły I nagrodę jako najlepszy zespół żeński w Europie. Czy coś z tego wynikło? Niewiele – zamiast kariery i splendoru przyszło długie czekanie na swoją płytę. Debiut ukazał się dopiero w 2001 roku. W międzyczasie – podczas urlopu macierzyńskiego Mai – zespół wszedł w artystyczny „romans” z Marcinem Świetlickim. Owocem tego mezaliansu był koncert w Studiu Radiowej Trójki, kilka kameralnych występów i wreszcie – w 2024 roku – winylowa reedycja debiutu Oczi Cziorne z „Kryminałem”, do którego Świetlicki użyczył swojego wiersza i głosu.\nPrzez ponad 30 lat działalności Oczi Cziorne dorobiły się tytułu legendy trójmiejskiej sceny niezależnej. Nagrały kilka płyt i teledysków, przewinęły się przez filmy dokumentalne i książki. Już dziś ich historia jest częścią stałej ekspozycji w Muzeum Polskiego Rocka w Jarocinie i nadal można ich posłuchać na żywo.\nNa koncercie w klubie Monk wspólnie z nimi zagrają członkinie zespołu Morświn – słynna basistka Tekla czyli Małgorzata Tekiel oraz saksofonistka barytonowa Paulina Owczarek. Zapraszamy na tę muzyczną ucztę, bo Morświny grają na stojąco, na siedząco, a nawet na leżąco, a Oczi Cziorne grają jak chcą.\nbilety: bilety.klubmonk.pl",
-      "id": 4
+      "id": 3
     },
     {
       "title": "Püdelsi",
@@ -107,7 +96,7 @@
         "SPATiF"
       ],
       "description": "data: 16 października 2025, godz. 21:00miejsce: SPATiF (o miejscu)adres: ul. Boh. Monte Cassino 52, Sopot\n\nCzy jest lepsze miejsce do świętowania 40-lecia powstania kapeli niż SPATiF? No nie, a najlepiej wiedzą o tym Püdelsi, którzy przejmą naszą scenę już 16.10.2025 r.\nZespół powstał w 1985 roku w Krakowie. Wykonują piosenki własnego autorstwa z bogatego repertuaru zgromadzonego na przestrzeni wielu lat działalności. W 2023 roku zespół wydał płytę Ciemna Strona, na której umieścił nowe wersje wybranych utworów z początku działalności zespołu.\nKoncert w SPATiF-ie to wyjątkowa okazja, aby usłyszeć wszystkie hity kapeli i wrócić do lat, kiedy muzyka była tak prawdziwa.\nbilety: www.tickets.b90.pl",
-      "id": 5
+      "id": 4
     },
     {
       "title": "Coma: Re-Start. Gra o wszystko",
@@ -118,7 +107,7 @@
         "Ergo Arena"
       ],
       "description": "data: 17 października 2025, godz. 18:00miejsce: Ergo Arena (o miejscu)adres: ul. Gospody 37, Gdańsk\n\nPo wyprzedanym w 10 godzin koncercie RE-START w rodzinnej Łodzi, legenda polskiego rocka rusza w trasę z niezwykłym widowiskiem multimedialnym, które prezentuje w ujęciu muzycznym i wizualnym najważniejsze utwory i momenty z historii zespołu. COMA cztery razy zagra o Wszystko, tworząc wyjątkową grę z własną historią!\nTo będą kolejnej odsłony największej i niezwykle emocjonalnej konfrontacji w historii zespołu – z udziałem gości, z nowymi aranżacjami wybranych utworów, z możliwością obejrzenia wcześniej niepublikowanych archiwaliów.\nNa scenie zobaczymy 6 zawodników, znamy ich doskonale – Roguc, Witos, Kobez, Matusz, Von Marszal, Von Hasselhoff.\n„Zespół COMA zaprasza na RE-START i spełnia marzenia. Aktywujemy Grę o Wszystko z przekazem Koncertu Totalnego, łączącego elementy multimedialnego show na granicy nowoczesnego teatru z bezwzględną rockandrollową rozpierduchą, czyli to, co potrafimy najlepiej. Jesteśmy w dobrej formie i chcemy się podzielić emocjami i siłą, jaką niesie nasza muzyka” – wyjaśnia COMA.\nBilety: www.coma-restart.pl",
-      "id": 6
+      "id": 5
     },
     {
       "title": "Zalia: trasa Serce",
@@ -129,7 +118,7 @@
         "Ucho/Podwórko Art"
       ],
       "description": "data: 17 października 2025, godz. 18:00miejsce: Ucho/Podwórko Art (o miejscu)adres: ul. Św. Piotra 2, Gdynia\n\nPo spektakularnym sukcesie wiosennej trasy koncertowej Z SERCA, ZALIA – jedna z najbardziej wyrazistych i utalentowanych artystek młodego pokolenia – ogłasza kolejną odsłonę swojego muzycznego projektu. Jesienią 2025 roku wokalistka wyruszy w trasę SERCE, która obejmie jeszcze więcej miast i większe sale koncertowe, odpowiadając na ogromne zainteresowanie i entuzjazm fanów.\nbilety: www.livenation.pl",
-      "id": 7
+      "id": 6
     },
     {
       "title": "Głęboko Wycofani",
@@ -140,7 +129,7 @@
         "Paszcza Lwa"
       ],
       "description": "data: 17 października 2025, godz. 19:00miejsce: Paszcza Lwa (o miejscu)adres: ul. Kwietna, Gdańsk\n\nGrupa Głęboko Wycofani, której nazwa oddaje pozycję na trójmiejskiej scenie muzycznej, powstała jesienią 2017 roku z inicjatywy wywodzących się z Gdańska-Oliwy, wieloletnich przyjaciół, których pasją od zawsze była muzyka.\nPoczątkowo, zespół ograniczał się do wykonywania coverów, które po jakimś czasie zastąpiły własne kompozycje. Z racji różnorodności stylów muzycznych, na których wychowali się poszczególni członkowie zespołu (od rocka progresywnego, poprzez zimną falę, rocka alternatywnego, aż do metalu), twórczość grupy cechuje eklektyzm muzyczny, a w prezentowanych utworach słychać wiele nawiązań do ulubionych wykonawców.\nPo raz pierwszy, zespół zaprezentował się szerszej publiczności w 2020 roku w oliwskim klubie Paszcza Lwa, w którym regularnie koncertuje do dzisiaj.\nwstęp wolny",
-      "id": 8
+      "id": 7
     },
     {
       "title": "SZ.A.J.S., Mateusz Tomczak, Proszę Zamknąć",
@@ -151,7 +140,7 @@
         "Desdemona"
       ],
       "description": "data: 17 października 2025, godz. 19:00miejsce: Desdemona (o miejscu)adres: ul. Abrahama 37, Gdynia\n\nSZ.A.J.S.\nJak dwusetny raz zagrać swoje utwory, aby za każdym razem nie było nudno? Chłopaki postanowili podjąć się tego wyzwania. Podobno im się to udało… Łódzki kwartet nie istnieje jeszcze roku, a już zdążył zakorbić sporo miejsc w Polsce, jak i wydać debiutancką płytę pod enigmatycznym tytułem „SZ.A.J.S”. Chciałbyś w końcu coś poczuć i pojechać na wycieczkę do Omska? Zapraszamy…\nMATEUSZ TOMCZAK\nMateusz Tomczak to łódzki songwriter, producent i wokalista. W swojej twórczości za pomocą chwytliwych melodii i hooków łączy przystępność z eksperymentalnymi rozwiązaniami i brzmieniem, odważnie eksplorując pole muzyki pop. Poprzez własny filtr opowiada najczęściej o smutku, złości, depresji, desperacji, alienacji, perwersjach czy seksualności w surowy i odrzucający metafory sposób.\nPROSZĘ ZAMKNĄĆ\nProszę Zamknąć to młody zespół z Trójmiasta, którego twórczość opiera się na abstrakcyjnych, eliptycznych tekstach osnutych eklektyczną kombinacją alternatywnego popu, jazzu, muzyki folkowej i swobodnej improwizacji charakterystycznej dla nadmorskiej nowej fali. Grupa powstała z inicjatywy wokalistki i kontrabasistki Rozalii Grabowskiej oraz perkusisty Szymona Pluty. Towarzyszą im wokalistka Ida Zielińska i pianista Ryszard Jezierski. Debiutancki album zespołu ukazał się 16 maja 2025 roku.\nbilety: 40 zł",
-      "id": 9
+      "id": 8
     },
     {
       "title": "Black Star Mantra, Demolition Zero, Junon Kyanon",
@@ -162,7 +151,7 @@
         "Pub Torpeda"
       ],
       "description": "data: 17 października 2025, godz. 19:30miejsce: Pub Torpeda (o miejscu)adres: ul. Nałkowskiej 3, Gdańsk\n\nBlack Star Mantra to warszawski zespół grający progresywny i nowoczesny metal z elementami djentu, elektroniki oraz innych brzmień spoza gatunku.\nDemolition Zero to metalcore’owy zespół z Gdańska, założony w połowie 2024 roku. Ich muzyka inspirowana jest takimi zespołami jak Bullet For My Valentine, Emmure, Oceans Ate Alaska, Killswitch Engage, As I Lay Dying i Slipknot. Obecnie pracują nad swoim debiutanckim albumem, zapewniając energetyczne występy pełne potężnych riffów i intensywnych breakdownów.\nJunon Kyanon to mieszanka wszelkich zdobyczy muzyki elektronicznej i nu metalu, pełna hardcore’owego ducha. Brzmienie, estetyka i buntownicze teksty w pełni inspirowane japońskimi grami wideo i napojami energetycznymi. W gratisie dorzucają energetyczne występy i dobrą zabawę.\nbilety: 35 zł",
-      "id": 10
+      "id": 9
     },
     {
       "title": "TSA MNKWL Akustycznie",
@@ -173,7 +162,7 @@
         "Blues Club"
       ],
       "description": "data: 17 października 2025, godz. 19:30miejsce: Blues Club (o miejscu)adres: ul. Portowa 9, Gdynia\n\nZespół TSA MNKWL to współczesne wcielenie legendarnego TSA – pierwszego polskiego zespołu, który w latach 80. wprowadził heavy metal na rodzime sceny!\nDo kanonu polskiego heavy rocka weszły przeboje grupy, m.in.: „Chodzą ludzie”, „Mass Media”, „51”, „Bez podtekstów”, „Trzy zapałki”, „Ty On Ja”, „Kocica”, „Maratończyk”, „Alien”, „Heavy Metal Świat” czy „Marsz Wilków” – znany z filmu „Akademia Pana Kleksa”.\nW 2019 roku powrócili w nowym składzie i ze zmodyfikowaną nazwą TSA MNKWL [od nazwisk muzyków], oferując wirtuozerskie popisy instrumentalne oraz niesamowitą energię i unikalne brzmienie, którymi podbili serca publiczności przez pokolenia. Zdaniem wielu fanów oraz dziennikarzy muzycznych mediów, są TSA MNKWL jest znakomitą kontynuacją legendy TSA, prezentując słynne hity grupy w brawurowych wersjach oraz premierowe utwory, nie ustępujące przebojowością sławnym poprzednikom.\nW lipcu 2023 roku TSA MNKWL zaprezentowało premierową płytę „NIEZWYCIĘŻONY” w wersji CD, a w styczniu’24 krążek ukazał się w bardzo efektownej wersji LP gatefold, otrzymując 'maksymalne’ i 'bardzo dobre’ oceny w prestiżowych pismach muzycznych: „METAL HAMMER” 5/5, „HEAVY METAL PAGES” 5/6, „TERAZ ROCK” 4/5, uzyskując również bardzo pozytywne recenzje w licznych publikacjach prasowych.\nKoncert tego wcielenia TSA po prostu trzeba obejrzeć na żywo, bo nie ustępuje swoją widowiskowością koncertom grupy sprzed lat! Zespół ‘na żywo’ robi na widzach wręcz piorunujące wrażenie, które zostaje w pamięci na bardzo długo!\nTSA MNKWL występuje w składzie:\nDamian Michalski – śpiew\nJanusz Niekrasz – bas\nMarek Kapłon – perkusja\nMaciej Wester – gitara\nPiotr Lekki – gitara\nbilety: www.bluesclub.pl",
-      "id": 11
+      "id": 10
     },
     {
       "title": "Nene Heroine: premiera albumu 4",
@@ -184,7 +173,7 @@
         "Gdański Teatr Szekspirowski"
       ],
       "description": "data: 17 października 2025, godz. 20:00miejsce: Gdański Teatr Szekspirowski (o miejscu)adres: ul. Wojciecha Bogusławskiego 1, Gdańsk\n\nOrganiczny, mocny, mistyczny” – tak trójmiejska grupa Nene Heroine zapowiada album „4”, którego premiera odbędzie się w Gdańskim Teatrze Szekspirowskim. Ich nowoczesne audiowizualne show będzie sporym zaskoczeniem dla jazzowej publiczności, a fani rocka, psychodelii i nowych brzmień na pewno będą zachwyceni tym występem.\nCzwarty album Nene Heroine to symboliczna podróż do korzeni – do pierwotnej, słowiańskiej energii zaklętej w dźwiękach, rytmach i gestach. „4” to nie tylko kolejna płyta w dorobku grupy – to manifest. Duchowe i muzyczne doświadczenie opowiadające o jedności czterech żywiołów: wody, ognia, powietrza i ziemi. Ich esencje ujęto w czterech prostych formach geometrycznych – kole, trójkącie, rombie i kwadracie – tworzących unikalny koncept wizualny albumu.\nPo doskonale przyjętych dwóch albumach studyjnych oraz projekcie „in three colors [live]”, z udziałem Kasi Lins i Szczyla, muzycy postanowili odświeżyć formułę swojej twórczości. Nowy materiał powstawał kolektywnie, w domku położonym w środku lasu – z dala od miasta, blisko natury, w rytmie dnia i nocy. Członkowie zespołu starali się uchwycić koncertową energię, dzięki której swobodnie wykraczają poza granice jazzu, zmierzając w stronę rocka i psychodelii. Dlatego „4” będzie pierwszym wydawnictwem, które w pełni oddaje dzikość i spontaniczność grupy.\nSpecjalny koncert promujący album przybierze formę parateatralną. Członkowie Nene Heroine wystąpią w złotych maskach, które wprowadzą element tajemniczości i anonimowości, a zarazem symbolicznie zjednoczą ich z żywiołami celebrowanymi poprzez muzykę. Efektem tej ceremonii będzie energia – żywa, pulsująca i transformowana w dźwięk.\nbilety: teatrszekspirowski.pl",
-      "id": 12
+      "id": 11
     },
     {
       "title": "Widmo: Jah Glory, Jakhill",
@@ -195,7 +184,7 @@
         "Dwie Zmiany"
       ],
       "description": "data: 17 października 2025, godz. 20:00miejsce: Dwie Zmiany (o miejscu)adres: Bohaterów Monte Cassino 31, Sopot\n\nWIDMO/ Jah Glory, Jakhill – koncert\nbilety w dniu koncertu po 10 zł do kupienia na barze",
-      "id": 13
+      "id": 12
     },
     {
       "title": "Vintage Hits Station",
@@ -206,7 +195,7 @@
         "Food Hall Montownia"
       ],
       "description": "data: 17 października 2025, godz. 21:00miejsce: Food Hall Montownia (o miejscu)adres: Lisia Grobla 7, Gdańsk\n\nW piątek 17 października o 21:00 w Montowni odbędzie się Vintage Hits Station – wieczór, podczas którego zabrzmią największe hity minionych lat, Wpadnij i poczuj dobrą energię!\nwstęp wolny",
-      "id": 14
+      "id": 13
     },
     {
       "title": "Król Słońce, Santabarbara",
@@ -217,7 +206,7 @@
         "Dwie Zmiany"
       ],
       "description": "data: 18 października 2025, godz. 19:00miejsce: Dwie Zmiany (o miejscu)adres: Bohaterów Monte Cassino 31, Sopot\n\nSantabarbara to najnowszy projekt Szczepana, Łukasza i Nikodema Pospieszalskich, wywodzących się z doskonale znanej w środowisku muzykującej rodziny. Ten projekt to synteza tego, co w muzyce dla nas ważne i inspirujące. Próbowaliśmy połączyć te wpływy począwszy od pierwszych fascynacji Radiohead, Jamesa Blake’a, Metronomy, Tame Impala przefiltrowanych przez nasze codzienne działania z pogranicza jazzu, muzyki tradycyjnej, improwizowanej, współczesnej kompozycji, a także muzyki czysto elektronicznej czy nawet techno. Całość nabrała formy w zderzeniu z zabytkowymi syntezatorami, które kolekcjonujemy, a których analogowe brzmienie stało się kolejną bazą eksploracji. — mówią muzycy Santabarbara o swoim zespole.\nKról Słońce powstał w 2020 roku w Warszawie dzięki spotkaniu producentów i muzyków Alika Matuszewskiego i Eryka Sarniaka, do których z czasem dołączył Maciek Sobczyński (gitara). Od 2024 na perkusji gra w KS Janek Nowakowski. Działając całkowicie niezależnie, grupa wydała dotąd kilkanaście singli i wypracowała charakterystyczne brzmienie. Ich muzyka meandruje między prog-popem, alt-disco i psychodeliczną improwizacją, a teksty spajają całość w pełny emocji, osobisty przekaz. Zespół nie ucieka od swoich korzeni i garściami czerpie z polskiej muzyki lat 70: Bemibek, SBB czy Andrzeja Korzyńskiego. Ich muzyka jest równocześnie bliska współczesnym grupom takim jak: King Gizzard & Lizard Wizard czy Badbadnotgood.\nbilety: stage24.pl",
-      "id": 15
+      "id": 14
     },
     {
       "title": "Muzyczny Tartak: Cobalt Wave",
@@ -228,7 +217,7 @@
         "Tartaczna 2"
       ],
       "description": "data: 18 października 2025, godz. 19:00miejsce: Tartaczna 2 (o miejscu)adres: ul. Tartaczna 2, Gdańsk\n\nCobalt Wave to zespół z Gdańska grający w klimatach rocka progresywnego, ambientu i psychodeli. Zaczęło się pod koniec 2018 od spotkania dwóch znajomych z jam session. W 2022 zespół oficjalnie zadebiutował, publikując pierwsze nagrania i wchodząc na koncertową scenę. Muzycy wspólnie tworzą materiał, wymieniając się pomysłami i motywami instrumentalnymi. Unikają utartych rozwiązań kompozycyjnych, oczywistych harmonii i szablonowej formy. Nasycona efektami gitara przeplata się z fortepianem i syntezatorami. Nieregularne rytmy perkusyjne współgrają z mocnymi basowymi riffami. W piosenkach wybrzmiewają refleksje na temat życia w XXI wieku. Oto kwintesencja kobaltowego brzmienia.\nSkład:\nArkadiusz Biskup – perkusja\nKuba Łopatka – wokal, gitara\nMikołaj Piotrzkowski – instrumenty klawiszowe\nDaniel Wicenty – gitara basowa\nMarcin Zazoniuk – gitara\nwstęp wolny",
-      "id": 16
+      "id": 15
     },
     {
       "title": "Prawy do lewego: tribute to Kayah i Bregovic",
@@ -239,7 +228,7 @@
         "Stacja Food Hall"
       ],
       "description": "data: 18 października 2025, godz. 19:00miejsce: Stacja Food Hall (o miejscu)adres: ul. Kilińskiego 4, Gdańsk\n\nZaproście ducha wolności do serca miasta! W sobotnią, jesienną noc Peron 5 w Stacji Food Hall zamieni się w roztańczone, bałkańskie widowisko. Przygotujcie się na koncert, który nie tylko usłyszycie, ale poczujecie całym ciałem! Na scenie pojawi się live band, który rozpali ognisko z nut, grając największe hity z kultowego albumu „Kayah i Bregović”.\nTo więcej niż koncert, to prawdziwa, muzyczna uczta! Poczujecie, jak „Prawy do lewego” miesza się z wirującymi spódnicami, a opowieść „Byłam różą” nabiera świeżej, parkietowej mocy. To spotkanie słowiańskiej duszy z ognistym temperamentem Bałkanów.\nZanim orkiestra rozgrzeje scenę, stery trzymać będzie DJ, serwując muzyczne przysmaki z pogranicza folku, etno i bałkańskiego szaleństwa. Bądźcie gotowi na to, że nogi same poniosą Was do tańca!\nBilety:\nod 19:00 do 21:00 wstęp free\npo 21:00 wejście płatne: 20 zł w przedsprzedaży (+ opłata serwisowa Going) || 30 zł na bramce",
-      "id": 17
+      "id": 16
     },
     {
       "title": "Sajgon, N.O.G.",
@@ -250,7 +239,7 @@
         "Paszcza Lwa"
       ],
       "description": "data: 18 października 2025, godz. 19:00miejsce: Paszcza Lwa (o miejscu)adres: ul. Kwietna, Gdańsk\n\nZapraszamy na koncert, który odbędzie się 18 października 2025r w Paszczy Lwa. Wystąpią SAJGON i N.O.G\nbilety: 60 zł",
-      "id": 18
+      "id": 17
     },
     {
       "title": "The Stubs",
@@ -261,7 +250,7 @@
         "SPATiF"
       ],
       "description": "data: 18 października 2025, godz. 19:00miejsce: SPATiF (o miejscu)adres: ul. Boh. Monte Cassino 52, Sopot\n\nNie ma w tym kraju drugiego takiego zespołu. Tomek, Radek i Łukasz (a teraz Dominik) od 2010 roku wydali 5 płyt i kilka epek, ale przede wszystkim zjechali pół świata i zagrali setki porywających koncertów. Grali na największych festiwalach, na skłotach, dachach, w kiblach, klubach, lasach, szopach, garażach, trolejbusach… Nieważne. Teraz zagrają sobie po raz pierwszy w Sopocie!\nbilety: www.tickets.b90.pl",
-      "id": 19
+      "id": 18
     },
     {
       "title": "Lej Mi Pół, Coco Bongo",
@@ -272,7 +261,7 @@
         "Ucho/Podwórko Art"
       ],
       "description": "data: 18 października 2025, godz. 20:00miejsce: Ucho/Podwórko Art (o miejscu)adres: ul. Św. Piotra 2, Gdynia\n\nKONIE I WALENIE TOUR 2025\nPamiętasz, jak kiedyś kupiłeś bilet na wymarzony koncert ulubionego zespołu? Pamiętasz tę ekscytację, poziom podniecenia? Koncert startował o dwudziestej, ale Ty zapomniałeś się nie naj*bać i jedyne co pamiętasz to taksówkarza z drogi powrotnej który w bliżej nieznanym Tobie języku, opowiadał coś o swoich morskich podbojach gdy służył w Marines. To jest taki rodzaj wojsk: piechota morska, nie mylić z marynarką wojenną bo to jest ku*wa co innego. Wiadomo, w Polsce nie mamy Marines, ale mamy marynarkę. Prawdopodobnie w kraju z którego pochodzi ów taksówkarz nie ma również tych jednostek. Ale co jest ważne w tej historii? Otóż pamiętasz gdy już dotarłeś do domu po felernym Gigu, porzygałeś się na krawężnik i zdałeś sobie sprawę, dotarło to do Ciebie, było jak oświecenie, afirmacja światła, błogosławieństwo narodzin, myśli człowieczeństwa: żeby być w piechocie morskiej trzeba być trochę waleniem i trochę koniem. Potem zwaliłeś na środku drogi i poszedłeś spać. Zapraszamy wszystkich na trasę, która powinna się nie odbyć, ale odbędzie się. Tak wiemy, mieliśmy robić nową płytę… Ale kto nas sprawdzi? Normalne kapele piszą w tym miejscu: do zobaczenia, my wolimy: powodzenia!\nPs: To jest wciąż lepsza historia miłosna niż Zmierzch, więc nie czepiaj się gramatyki arcych*ju!\nPs2: Będą niestety też grane numery nowe… Zarządzenie Ministra ds. Granic Absurdu dr inż. Juliusza Arkadiusza Książkiewicza!\nLEJ MI PÓŁ to grupa, której bliżej do stand-upu niż do klasycznego zespołu muzycznego. Tu muzyka, choć bez dwóch zdań chwytliwa, stanowi tło dla wszystkiego, co dzieje się w międzyczasie… a nigdy nie wiadomo, co tam się wydarzy! Lej Mi Pół już blisko dekadę przyciąga na koncerty tłumy entuzjastów absurdalnego humoru. Ich cięty język, duży dystans do samych siebie i niepodrabialna chemia między członkami zespołu działają jak samonapędzająca się machina szaleństwa. Nie ma tu mowy o jakimkolwiek dystansie między muzykami i publicznością. Gdziekolwiek się pojawiają, tam jest impreza, a na imprezach wspomniani panowie zdecydowanie częściej wychodzą na scenę niż na ludzi. Ostrzegamy – występów tego trio nie da się odzobaczyć!\nCOCO BONGO przedstawiciele nurtu StandUp Punk, prosto z Sucharszczyzny Pomorskiej. Ich twórczość to miks kalifornijskich brzmień z domieszką bigosu i kiełbasy. Na koncie mają płyty „Jacuzzi Banana” i „Kryzys Wieku Młodego”. Nie biorą siebie na serio i dzięki temu rozkładają publiczność na łopatki.\nbilety: www.kupbilecik.pl",
-      "id": 20
+      "id": 19
     },
     {
       "title": "Nu Metal Party",
@@ -283,7 +272,7 @@
         "Wydział Remontowy"
       ],
       "description": "data: 18 października 2025, godz. 21:00miejsce: Wydział Remontowy (o miejscu)adres: ul. Doki 1, Gdańsk\n\nNU METAL ma się dobrze, a potwierdza to popularność zespołów w tym klimacie. Zapraszamy na imprezę z taką właśnie muzą, więc dobra zabawa jest gwarantowana! Tańce, śpiewy i hulanki będziemy uprawiać przy muzie takich kapel jak np.: System Of A Down, Korn, Slipknot, Limp Bizkit, Linkin Park, Deftones, Rage Against the Machine, Disturbed, Godsmack, Staind, P.O.D., Papa Roach, Static-X, Coal Chamber, Dope, Drowning Pool, Machine Head, Mudvayne, Beastie Boys, H-Blockx, Skunk Anansie, Guano Apes, KNŻ, Hope.\nImprezę prezentuje: JACA MUSIC EVENTS\nwstęp: 25 zł",
-      "id": 21
+      "id": 20
     },
     {
       "title": "Pogodno: zamknięcie AAFF",
@@ -294,7 +283,7 @@
         "Europejskie Centrum Solidarności"
       ],
       "description": "data: 18 października 2025, godz. 21:00miejsce: Europejskie Centrum Solidarności (o miejscu)adres: Plac Solidarności 1, Gdańsk\n\nBliscy przyjaciele Jacka „Budynia” Szymkiewicza z Pogodno oraz gościnnie Sarsa i Kev Fox wystąpią finałowego wieczoru 19. edycji All About Freedom Festival. Nieprzypadkowo, koncert wiąże się bezpośrednio z poprzedzającym go filmem. Obejrzyjcie film i posłuchajcie muzyki.\nPrzed koncertem zapraszamy na projekcję filmu Szkoda, że nareszcie (reż. Sebastian Juszczyk), poświęconego Jackowi „Budyniowi” Szymkiewiczowi, założycielowi i liderowi zespołu, którego nagła śmierć w 2022 roku przerwała historię Pogodno. Koncert stanie się nie tylko finałem festiwalu, ale także muzycznym hołdem dla artysty i jego dorobku. A że zespół nie koncertuje regularnie od wielu lat, spotyka się tylko w wyjątkowych okolicznościach, tym święto jeszcze większe.\nPogodno powstało w 1996 roku w Szczecinie i od początku wymykało się jednoznacznym gatunkowym definicjom. Jego muzyka – początkowo określana jako natural bit beat – z czasem coraz odważniej łączyła różne style, od rocka po psychodelię i pop. Na przestrzeni ponad dwudziestu lat działalności zaowocowała dziesięcioma albumami. Zespół, znany z nieprzewidywalnych koncertów i ogromnej scenicznej energii, na trwałe zapisał się w historii polskiej alternatywy.\nDzisiejsza odsłona Pogodno to spotkanie muzyków, bliskich przyjaciół Budynia, którzy na scenie pielęgnują jego dziedzictwo. W Gdańsku wystąpią: Michael Pfeiff (gitara basowa), Jarosław Kozłowski (perkusja), Paweł Osicki (perkusja), Hrabia Lesław Fochmann (gitara, piano), Marcin Macuk (instrumenty klawiszowe), Piotr „Bajzel” Piasecki (gitara, wokal), Darek Sprawka (puzon), Antoni Gralak (trąbka) oraz Joanna Lewandowska (wokal, ukulele).\nSpecjalnymi gośćmi koncertu będą Sarsa i Kev Fox.\nSarsa | Polska wokalistka i autorka tekstów, znana z przebojów łączących pop, elektronikę i elementy alternatywy. Laureatka wielu nagród muzycznych, doceniana za charakterystyczny głos i charyzmę sceniczną.\nKev Fox | Brytyjski muzyk i wokalista od wielu lat mieszkający w Polsce. Jego twórczość łączy indie rock, elektronikę i intymną narrację, tworząc wyrazistą atmosferę na scenie.\nwstęp wolny",
-      "id": 22
+      "id": 21
     },
     {
       "title": "Zupełnie inna impreza",
@@ -305,7 +294,7 @@
         "Pub Torpeda"
       ],
       "description": "data: 18 października 2025, godz. 21:00miejsce: Pub Torpeda (o miejscu)adres: ul. Nałkowskiej 3, Gdańsk\n\nZapraszamy na Poprawkę urodzinowego wydarzenia na którym DJ FiFi będzie ponownie świętował 25-lecie na DJskiej scenie.\nPrzygotuj się na wieczór pełen nostalgii! 18 października w Pubie Torpeda odbędzie się „Zupełnie Inna Impreza” z muzyką lat 90. i 00.\nStartujemy o 21:00, wstęp 20 PLN.\nNie przegap tej wyjątkowej podróży w czasie.",
-      "id": 23
+      "id": 22
     },
     {
       "title": "Poluzjanci: trasa 4P",
@@ -316,7 +305,7 @@
         "Stary Maneż"
       ],
       "description": "data: 19 października 2025, godz. 18:00miejsce: Stary Maneż (o miejscu)adres: ul. Słowackiego 23, Gdańsk\n\nPoluzjanci oddają w ręce fanów swój czwarty album. To wyczekiwany projekt, który stał się nie tylko muzycznym wyzwaniem, lecz także emocjonalnym przeżyciem. Proces jego tworzenia naznaczyła śmierć Przemka Maciołka – współzałożyciela i jednego z filarów zespołu.\nbilety: ticketclub.pl",
-      "id": 24
+      "id": 23
     },
     {
       "title": "Alicja Szemplińska",
@@ -327,7 +316,7 @@
         "Drizzly Grizzly"
       ],
       "description": "data: 19 października 2025, godz. 19:00miejsce: Drizzly Grizzly (o miejscu)adres: ul. Elektryków 1, Gdańsk\n\nAlicja to jeden z najbardziej charakterystycznych głosów polskiej sceny muzycznej. Rozkochuje swoich słuchaczy w brzmieniach muzyki R’n’B oraz soul, a w jej nowych utworach słyszymy autorskie teksty opierające się na osobistych doświadczeniach. 29 czerwca 2024 roku ukazał się jej debiutancki album, który promowały świetnie przyjęte single “spokojnie panowie”, tytułowe “nie wracam”, “za dużo łez” oraz “w co ty dziś grasz”. Na płycie znalazły się historie, dzięki którym poznajemy Alicję na nowo – jako dojrzałą artystkę.\nbilety: biletyna.pl",
-      "id": 25
+      "id": 24
     },
     {
       "title": "Proud Mary: Tribute to CCR",
@@ -338,6 +327,17 @@
         "Blues Club"
       ],
       "description": "data: 19 października 2025, godz. 19:30miejsce: Blues Club (o miejscu)adres: ul. Portowa 9, Gdynia\n\nRok 1967. Bracia Fogerty (John i Tom) zakładają Creedence Clearwater Revival. Chcą grać prostego rockendrolla czerpiąc garściami z dokonań amerykańskiego folku, country i południowego rocka. Szybko zdobywają popularność wydając albumy wypełnione przebojami. Szczyt ich kariery przypada na 1969 rok, kiedy sprzedają więcej płyt niż The Beatles. Zespół rozpada się zaledwie po pięciu latach działalności pozostawiając po sobie wiele hitów. Nawet dziś każdy zna, albo kiedyś słyszał, piosenki takie jak: „Have you ever seen the rain”, „Fortunate son”, „Proud Mary” czy „Green river.” Rok 2022. Elbląg. Piątka kumpli postanawia założyć zespół. Okazuje się, że wszyscy lubią, albo słyszeli CCR, dlatego biorą na warsztat ich piosenki nadając im własny, bardziej zadziorny charakter. Nazywają się Proud Mary.\nbilety: www.bluesclub.pl",
+      "id": 25
+    },
+    {
+      "title": "The Surfers, Wersja De Lux",
+      "link": "https://www.rock3miasto.pl/wydarzenie/the-surfers-wersja-de-lux/",
+      "date": "2025-10-18T22:00:00.000Z",
+      "location": [
+        "Gdańsk",
+        "Pub Torpeda"
+      ],
+      "description": "data: 19 października 2025, godz. 19:30miejsce: Pub Torpeda (o miejscu)adres: ul. Nałkowskiej 3, Gdańsk\n\nChcesz poczuć prawdziwy klimat lat 60-tych? Jesteś fanem mody vintage, lubisz kulturę amerykańską lub szukasz nowych brzmień w mieście? Nie może Cię zabraknąć na tym wydarzeniu!\nWersja De Lux – ska&roll z Trójmiasta\nMuzyka i Ludzie – tak brzmi motto zespołu. Od 2003 r., z dłuższą przerwą, działają na trójmiejskiej i polskiej scenie ska/punk i okolice. Wersja De Lux powstała, aby grać ska i wciąż czerpie z bogactwa tego gatunku, ale z czasem wyklarowała swój wyjątkowy styl. To spowodowało, że ich muzyka zaczęła wymykać się z tej szuflady, dlatego określają to, co grają, jako ska&roll. Dzięki temu podkreślają źródło i bazę dla swojej muzyki, równocześnie wskazując na pozostałe wpływy i inspiracje.\nThe Surfers to polska formacja grająca klasyczną muzykę surf- mokry reverb, trzeszczący saksofon, szalone organy i surferskie okrzyki to mieszanka, której długo nie zapomnisz… Tego wieczoru będziesz mógł przenieść się w czasie do słonecznego lata 1963 roku na wybrzeże Kalifornii, krzycząc Tequila i tańcząc twista do Wipe Out!\nbilety: 30 zł",
       "id": 26
     },
     {

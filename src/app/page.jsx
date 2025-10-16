@@ -1,6 +1,7 @@
 import scrapeData from "./server-functions/scrapedata";
 import Event from "./web-components/event";
 import FilterBox from "./web-components/filterbox";
+import AccurateSearch from "accurate-search";
 
 export default async function Home({searchParams}) {
   let filterData = {};
@@ -16,7 +17,11 @@ export default async function Home({searchParams}) {
   filterData.endDate = params["endDate"] || filterData.endDate
   filterData.activeLocations = params["activeLocations"] || filterData.activeLocations
   filterData.searchTerm = params["searchTerm"] || filterData.searchTerm
-
+  const searcher = new AccurateSearch();
+  for (let i = 0; i < data.events.length; i++) {
+    searcher.addText(i, data.events[i].description+" "+data.events[i].title)
+  }
+  const searchResults= filterData.searchTerm!=""? searcher.search(filterData.searchTerm).map(id=>data.events[id]): data.events;
   return (
     <main>
       <div className="absolute flex flex-row-reverse top-4 right-4 z-11">
@@ -46,10 +51,10 @@ export default async function Home({searchParams}) {
       </a>
       </div>
       
-      <FilterBox basedata={data} />
+      <FilterBox basedata={data} prevFilters={filterData} />
 
       <div className="w-full">
-      {data.events.map((event) => (
+      {searchResults.map((event) => (
         <Event filterData={filterData} key={event.id} event={event}/>
       ))}
       </div>

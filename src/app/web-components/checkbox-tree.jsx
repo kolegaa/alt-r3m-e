@@ -2,20 +2,28 @@
 
 import { useState, useEffect } from "react";
 
-export default function CheckboxTree({ dict, onChange }) {
+/*
+This is not an actual tree, it goes 1 key deep because it doesn't need to go any deeper
+*/
+
+export default function CheckboxTree({ dict, onChange, prevChecked = []}) {
     const [checkedNodes, setCheckedNodes] = useState([]);
     const [activeKeys, setActiveKeys] = useState([]);
 
-    // Initialize states based on dict prop
+    // Initialize states
     useEffect(() => {
         if (dict) {
-            // Initialize checkedNodes with all items from dict
-            const initialCheckedNodes = Object.values(dict).flat();
-            setCheckedNodes(initialCheckedNodes);
+            setCheckedNodes(prevChecked);
             
             // Initialize activeKeys with all keys from dict
-            const initialActiveKeys = Object.keys(dict);
-            setActiveKeys(initialActiveKeys);
+            Object.keys(dict).forEach( key => {
+            const allItemsChecked = dict[key].every(item => checkedNodes.includes(item));
+            if (allItemsChecked && !activeKeys.includes(key)) {
+                setActiveKeys([...activeKeys, key]);
+            } else if (!allItemsChecked && activeKeys.includes(key)) {
+                setActiveKeys(activeKeys.filter((node) => node !== key));
+            }
+            })
         }
     }, [dict]);
 

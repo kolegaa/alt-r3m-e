@@ -4,6 +4,7 @@
     "": {
       "name": "alt-r3m-e",
       "dependencies": {
+        "accurate-search": "^1.2.15",
         "cally": "^0.8.0",
         "cheerio": "^1.1.2",
         "cli-progress": "^3.12.0",
@@ -131,6 +132,8 @@
     "@tailwindcss/oxide-win32-x64-msvc": ["@tailwindcss/oxide-win32-x64-msvc@4.1.14", "", { "os": "win32", "cpu": "x64" }, "sha512-ttblVGHgf68kEE4om1n/n44I0yGPkCPbLsqzjvybhpwa6mKKtgFfAzy6btc3HRmuW7nHe0OOrSeNP9sQmmH9XA=="],
 
     "@tailwindcss/postcss": ["@tailwindcss/postcss@4.1.14", "", { "dependencies": { "@alloc/quick-lru": "^5.2.0", "@tailwindcss/node": "4.1.14", "@tailwindcss/oxide": "4.1.14", "postcss": "^8.4.41", "tailwindcss": "4.1.14" } }, "sha512-BdMjIxy7HUNThK87C7BC8I1rE8BVUsfNQSI5siQ4JK3iIa3w0XyVvVL9SXLWO//CtYTcp1v7zci0fYwJOjB+Zg=="],
+
+    "accurate-search": ["accurate-search@1.2.15", "", {}, "sha512-I1aXdUeHUVjWlGjSbBd8NaME/CQU942H2tHMEuZ5et/xb52mDhikIebAi9ufEoAe8lwzHrbCl4R5euCZ8K/wfA=="],
 
     "ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
 
