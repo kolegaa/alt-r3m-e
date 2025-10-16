@@ -23,8 +23,11 @@ export default function Event({ event, filterData }) {
     return (
         <div key={event.id} tabIndex={0} className="w-auto collapse border-base-300 border-1 p-2 bg-base-200 m-4 rounded-box">
             <div className="collapse-title font-semibold">
-                <span className="text-primary-content bg-primary p-2 rounded-selector font-semibold">{event.title}</span>   
-                {" "+new Date(event.date).toDateString()} - <div className="badge badge-secondary">{event.location.join(", ")}</div>
+                <div className="flex flex-row flex-wrap gap-2 items-center">
+                    <div className="text-primary-content bg-primary p-2 rounded-selector font-semibold">{event.title}</div>   
+                    <div> {new Date(event.date).toDateString()} </div>
+                    <div className="badge h-max badge-secondary">{event.location.join(", ")}</div>
+                </div>
             </div>
             <div className="collapse-content text-sm whitespace-pre-wrap">{event.description+"\n"}<a className="link" href={event.link}>Linkie</a></div>
         </div>

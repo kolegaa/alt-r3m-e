@@ -17,6 +17,7 @@ export default async function Home({searchParams}) {
   filterData.endDate = params["endDate"] || filterData.endDate
   filterData.activeLocations = params["activeLocations"] || filterData.activeLocations
   filterData.searchTerm = params["searchTerm"] || filterData.searchTerm
+  filterData.sortBy = params["sortBy"] || "dateAsc";
   const searcher = new AccurateSearch();
   for (let i = 0; i < data.events.length; i++) {
     searcher.addText(i, data.events[i].description+" "+data.events[i].title)
@@ -54,7 +55,17 @@ export default async function Home({searchParams}) {
       <FilterBox basedata={data} prevFilters={filterData} />
 
       <div className="w-full">
-      {searchResults.map((event) => (
+      {searchResults.sort((a,b)=>{
+        if (filterData.sortBy!="relevance"){
+          if (filterData.sortBy == "dateAsc") {
+            return new Date(a.date) - new Date(b.date);
+          } else if (filterData.sortBy == "dateDesc") {
+            return new Date(b.date) - new Date(a.date);
+          };
+        } else {
+          return 0
+        }
+      }).map((event) => (
         <Event filterData={filterData} key={event.id} event={event}/>
       ))}
       </div>

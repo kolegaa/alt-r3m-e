@@ -6,16 +6,14 @@ import { useState, useEffect } from "react";
 This is not an actual tree, it goes 1 key deep because it doesn't need to go any deeper
 */
 
-export default function CheckboxTree({ dict, onChange, prevChecked = []}) {
-    const [checkedNodes, setCheckedNodes] = useState([]);
+export default function CheckboxTree({ dict, onChange, prevChecked}) {
+    const [checkedNodes, setCheckedNodes] = useState(prevChecked);
     const [activeKeys, setActiveKeys] = useState([]);
 
     // Initialize states
     useEffect(() => {
         if (dict) {
-            setCheckedNodes(prevChecked);
-            
-            // Initialize activeKeys with all keys from dict
+            if (prevChecked.length > 0) {
             Object.keys(dict).forEach( key => {
             const allItemsChecked = dict[key].every(item => checkedNodes.includes(item));
             if (allItemsChecked && !activeKeys.includes(key)) {
@@ -23,7 +21,9 @@ export default function CheckboxTree({ dict, onChange, prevChecked = []}) {
             } else if (!allItemsChecked && activeKeys.includes(key)) {
                 setActiveKeys(activeKeys.filter((node) => node !== key));
             }
-            })
+            }) } else {
+                setActiveKeys(Object.keys(dict));
+            }
         }
     }, [dict]);
 
