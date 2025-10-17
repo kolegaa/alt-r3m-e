@@ -1,10 +1,11 @@
 'use server';
 
+const cliProgress = require('cli-progress');
 import * as cheerio from "cheerio";
 import { writeFile, readFile } from 'fs/promises';
 import path from 'path';
 
-async function fetchWithRetry(url, options = {}, retries = 8, backoff = 2000) {
+async function fetchWithRetry(url, options = {}, retries = 8, backoff = 1000) {
     for (let i = 0; i < retries; i++) {
         try {
             const response = await fetch(url, options);
@@ -31,22 +32,32 @@ async function getDescription(link) {
     }
 }
 
-async function fetchevents(previousData) {
+async function fetchevents(previousData,forceRefetch) {
+    
+    const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
     try {
+        const lastfetch = new Date().toISOString();
+        const timeSinceLastFetch = new Date()-new Date(previousData.meta.lastfetch)
+        
+        if (previousData && previousData.meta && !forceRefetch&&timeSinceLastFetch/1000/60/60 < 6){console.log("Data is " + timeSinceLastFetch/1000/60/60 + " hours old, Retruning old data"); return previousData};
+
         const data = await fetchWithRetry('https://www.rock3miasto.pl/wydarzenie/');
         const $ = cheerio.load(data);
         const events = $('.eme_events_list').html().split('<br>').filter(Boolean);
         const hash = require('crypto').createHash('md5').update(events.join()).digest('hex');
-        const lastfetch = new Date().toISOString();
-
-        const timeSinceLastFetch = new Date()-new Date(previousData.meta.lastfetch)
-        if (previousData && previousData.meta && ( timeSinceLastFetch > 1000*60*60*24 || previousData.meta.hash === hash)) {console.log("Retruning old data");return previousData};
-        console.log("Fetching new data")
-        const parsedEvents = await Promise.all(events.map(async (event, i) => {
+        
+        if (previousData && previousData.meta && !forceRefetch&&previousData.meta.hash === hash) {console.log("Data is the same, Retruning old data"); return previousData};
+        
+        console.log("Data is " + timeSinceLastFetch/1000/60/60 + " hours old, Fetching new data")
+        const parsedEvents = [];
+        progressBar.start(events.length, 0);
+        for (let i = 0; i < events.length; i++) {
+            const event = events[i];
             const parts = event.split('strong>');
             if (parts.length < 3) {
                 console.warn('Unexpected event format:', event);
-                return null;
+                parsedEvents.push(null);
+                continue;
             }
             
             const datelist = parts[0].slice(0, -2).trim().split('.');
@@ -57,8 +68,10 @@ async function fetchevents(previousData) {
             const linkMatch = parts[1].match(/href="(.*?)"/);
             const link = linkMatch ? linkMatch[1] : 'No Link';
             const description = await getDescription(link);
-            return { title, link, date, location, description, id: i };
-        }));
+            parsedEvents.push({ title, link, date, location, description, id: i });
+            progressBar.increment();
+        }
+        progressBar.stop();
 
         const locations = {};
         parsedEvents.forEach(event => {
@@ -92,12 +105,12 @@ async function fetchevents(previousData) {
     }
 }
 
-export default async function scrapeData() {
+export default async function scrapeData(forceRefetch=false) {
     const filePath = path.join(process.cwd(), 'public', 'events.json');
     try {
         const data = await readFile(filePath, 'utf-8').then(content => JSON.parse(content)); 
         try {
-            return await fetchevents(data);
+            return await fetchevents(data,forceRefetch);
         } catch (error) {
             console.error('Error in scrapeData:', error);
             try {

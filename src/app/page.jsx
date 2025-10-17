@@ -1,20 +1,28 @@
 import scrapeData from "./server-functions/scrapedata";
 import Event from "./web-components/event";
 import FilterBox from "./web-components/filterbox";
+import AccurateSearch from "accurate-search";
 
 export default async function Home({searchParams}) {
   let filterData = {};
   
-  const data = await scrapeData().then((res) => {
+  const params = await searchParams;
+  let forceRefetch = false
+  if (params["forceRefetch"]) {forceRefetch = true};
+  const data = await scrapeData(forceRefetch).then((res) => {
     filterData={startDate: res.events[0].date,endDate: res.events[res.events.length-1].date,activeLocations: [].concat(...Object.values(res.meta.locations)), searchTerm:""}
     return res;
   });
-  const params = await searchParams;
   filterData.startDate = params["startDate"] || filterData.startDate
   filterData.endDate = params["endDate"] || filterData.endDate
   filterData.activeLocations = params["activeLocations"] || filterData.activeLocations
   filterData.searchTerm = params["searchTerm"] || filterData.searchTerm
-
+  filterData.sortBy = params["sortBy"] || "dateAsc";
+  const searcher = new AccurateSearch();
+  for (let i = 0; i < data.events.length; i++) {
+    searcher.addText(i, data.events[i].description+" "+data.events[i].title)
+  }
+  const searchResults= filterData.searchTerm!=""? searcher.search(filterData.searchTerm).map(id=>data.events[id]): data.events;
   return (
     <main>
       <div className="absolute flex flex-row-reverse top-4 right-4 z-11">
@@ -44,10 +52,20 @@ export default async function Home({searchParams}) {
       </a>
       </div>
       
-      <FilterBox basedata={data} />
+      <FilterBox basedata={data} prevFilters={filterData} />
 
       <div className="w-full">
-      {data.events.map((event) => (
+      {searchResults.sort((a,b)=>{
+        if (filterData.sortBy!="relevance"){
+          if (filterData.sortBy == "dateAsc") {
+            return new Date(a.date) - new Date(b.date);
+          } else if (filterData.sortBy == "dateDesc") {
+            return new Date(b.date) - new Date(a.date);
+          };
+        } else {
+          return 0
+        }
+      }).map((event) => (
         <Event filterData={filterData} key={event.id} event={event}/>
       ))}
       </div>

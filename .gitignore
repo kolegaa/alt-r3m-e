@@ -40,8 +40,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+<<<<<<< HEAD
 # vscode
 .vscode/
 
 # events
 public/events.json
+=======
+public/*
+.vscode/
+>>>>>>> 8d22da1020abd3a6304d865be91bac68fc8aa46b
