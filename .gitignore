@@ -44,4 +44,4 @@ next-env.d.ts
 .vscode/
 
 # events
-public/events.json
+src/app/public/events.json

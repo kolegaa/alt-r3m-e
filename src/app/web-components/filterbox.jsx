@@ -18,21 +18,21 @@ export default function FilterBox({basedata, prevFilters}) {
         setSearchTerm("");
     }
     return (
-    <div className="flex flex-row flex-wrap m-4 sticky top-2 z-10 w-full gap-y-2 gap-x-4 mr-0">
+    <div className="flex flex-row flex-wrap m-4 sticky top-2 z-10 w-[calc(100vw-4)] gap-y-2 gap-x-4 mr-0">
         <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn p-4! border-1 border border-base-300 rounded-field">Date</div>
+            <div tabIndex={0} role="button" className="btn p-4! border border-base-300 rounded-field">Date</div>
             <div className="dropdown-content p-2 pl-0 rounded-field">
                 <Calendar minDate={minDate} maxDate={maxDate} onChange={setDateRange} />
             </div>
         </div>
         <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn p-4! border-1 border border-base-300 rounded-field">Locations</div>
+            <div tabIndex={0} role="button" className="btn p-4! border border-base-300 rounded-field">Locations</div>
             <div className="dropdown-content rounded-field p-2 pl-0 max-h-96 w-100 overflow-y-auto">
                 <CheckboxTree dict={basedata.meta.locations} prevChecked={prevFilters.activeLocations} onChange={setActiveLocations}  />
             </div>
         </div>
         <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn w-max p-4! border-1 border border-base-300 rounded-field">Sort by</div>
+            <div tabIndex={0} role="button" className="btn w-max p-4! border border-base-300 rounded-field">Sort by</div>
             <div className="dropdown-content p-2 pl-0">
                 <div className="bg-base-200 border border-base-300 rounded-box flex flex-col p-3 w-max gap-4 align-items-center justify-items-center">
                     <label className="label">

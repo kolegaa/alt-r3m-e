@@ -5,6 +5,8 @@ import * as cheerio from "cheerio";
 import { writeFile, readFile } from 'fs/promises';
 import path from 'path';
 
+const filePath = path.join(process.cwd(),"src","app", 'public', 'events.json')
+
 async function fetchWithRetry(url, options = {}, retries = 8, backoff = 1000) {
     for (let i = 0; i < retries; i++) {
         try {
@@ -21,7 +23,10 @@ async function fetchWithRetry(url, options = {}, retries = 8, backoff = 1000) {
     console.log('All fetch attempts failed for url:', url);
 }
 
-async function getDescription(link) {
+async function getDescription(link,previous) {
+    if (link in previous.eventsByLink.keys()) {
+        return previous.events[previous.eventsByLink[link]].description
+    }
     try {
         const data = await fetchWithRetry(link);
         const $ = cheerio.load(data);
@@ -67,7 +72,7 @@ async function fetchevents(previousData,forceRefetch) {
             const title = titleMatch ? titleMatch[1].trim() : 'Unknown Title';
             const linkMatch = parts[1].match(/href="(.*?)"/);
             const link = linkMatch ? linkMatch[1] : 'No Link';
-            const description = await getDescription(link);
+            const description = await getDescription(link,previousData);
             parsedEvents.push({ title, link, date, location, description, id: i });
             progressBar.increment();
         }
@@ -85,17 +90,24 @@ async function fetchevents(previousData,forceRefetch) {
             }
         });
 
+        const eventList = parsedEvents.filter(event => event !== null)
+
+        const eventsByLink = eventList.reduce( (acc, {id, link} ) => {
+            acc[link] = id
+            return acc 
+        }, {})
+
         const result = {
             meta: {
                 locations,
                 lastfetch,
                 hash
             },
-            events: parsedEvents.filter(event => event !== null)
+            eventsByLink:eventsByLink,
+            events: eventList
         };
 
         // Save to public/events.json
-        const filePath = path.join(process.cwd(), 'public', 'events.json');
         await writeFile(filePath, JSON.stringify(result, null, 2));
 
         return result;
@@ -105,8 +117,7 @@ async function fetchevents(previousData,forceRefetch) {
     }
 }
 
-export default async function scrapeData(forceRefetch=false) {
-    const filePath = path.join(process.cwd(), 'public', 'events.json');
+export default async function scrapeData(forceRefetch=false) {;
     try {
         const data = await readFile(filePath, 'utf-8').then(content => JSON.parse(content)); 
         try {
